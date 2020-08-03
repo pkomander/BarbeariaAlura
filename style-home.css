@@ -1,0 +1,65 @@
+body {
+
+}
+
+#nav {
+	display: inline;
+	margin: 0;
+}
+
+#banner {
+	width: 100%;
+}
+
+.principal {
+	background: #CCCCCC;
+	padding: 30px;
+}
+
+.titulo-principal {
+	padding-left: 20px;
+}
+
+.titulo-centralizado {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+/*para referenciar um id na pagina css */
+#missao {
+	font-size: 20px;
+}
+
+/*para alterar somente o elemento strong, que esta dentro do "em" em uma pagina 
+para alterar a cor do texto utiliza-se a tag color */
+em strong {
+	color: #FF0000;
+}
+
+/*para transformar a fonte por meio do css utiliza-se italic */
+.itens {
+	font-style: italic;
+}
+
+/*para adicionar um espaçamento entre os elementos utiliza-se o padding; */
+.beneficios {
+	background: #FFFFFF;
+	padding: 20px;
+}
+
+/*block preenche toda linha e não deixa voce mecher no conteudo na linha, para fazer a alteração deve-se utilizar o display: inline-block; */
+/*usando o display: inline-block, deve utilizar o vertical-align: top para alinhar todos os elementos na mesma linha superior; */
+ul {
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	margin-right: 15%;
+}
+
+
+.imagembeneficios {
+	width: 50%;
+}

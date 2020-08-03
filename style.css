@@ -1,0 +1,305 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	background: #BBBBBB;
+	padding: 20px 0px;
+}
+
+/*para centralizar a imagem e o texto criou-se uma div, adcione um tamanho a ela diga que a posição dela e relative e margin e
+0 para top e bottom e auto para as laterais */
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+/*para deixar o texto da nav um ao lado do outro com o display: inline */
+/*para colocar um espaçamento entre os itens do menu utiliza-se o margin */
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+/*utiliza-se p text-transform com o metodo uppercase para colocar o texto em maiusculo */
+/*color: para mudar a cor da fonte; */
+/*font-weight> bold para para mudar o peso da fonte no caso colocar em negrito com o bold */
+/*font-size: para alterar o tamanho da font; */
+/*text-decoration: para alterar a decoração do texto, com o none retira-se o underscore do link; */
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+/*adcionando eventos ao passar o mouse sobre os elementos com css */
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+/*centralizando a imagem e o texto da ul adcionando uma largura e margem */
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0px;
+}
+
+/*para deixar o texto e imagem um do lado do outro */
+/*width: para adcionar um espaçamento de 30% para todos os itens; */
+/*adcionar o alinhamento vertical no top */
+/*margin espaçamento externo */
+/*padding espaçamento interno */
+/*para adcionar os espaçamentos dentro do tamanho do border-box */
+/*para adcionar uma borda e preciso definir a cor, tamanho e style */
+/*para adcionar um arredondamento na borda utilia-se o border-radius passando o tamanho do arredondamento */
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+/*adcionando eventos ao passar o mouse sobre os elementos com css na imagem*/
+.produtos li:hover {
+	border-color: #C78C19;
+}
+
+/*mudando de cor apos o click do mouse no elemento */
+.produtos li:active {
+	border-color: #088C19;
+}
+
+/*alterando o tamanho do elemento quando o mouse estiver em cima */
+.produtos li:hover h2 {
+	font-size: 34px;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+/*estizando o footer e adcionando uma imagem de fundo no elemento usando o css */
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0px;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+/*centralizando o main na pagina */
+main {
+	
+}
+
+/*adicionando espaçamento no form */
+form {
+	margin: 40px 0;
+	padding: 40px;
+}
+
+/*para os itens do formulario ficarem um embaixo do outro e necessario colocar o display block */
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+/*transition podemos adicionar uma transição no background */
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+/*para que o tamanho do item aumente quando o mouse estiver em cima utiliza-se o transform */
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.2);
+}
+
+table {
+	margin: 20px 40px;
+}
+
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}
+
+/*css da página inicial */
+.banner {
+	width: 100%;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+	font-weight: bold;
+}
+
+.principal {
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.principal p {
+	margin: 0 0 1em;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal {
+	font-style: italic;
+}
+
+/*float para que a imagem fique na esquerda e o texto passa a ficar ao lado da imagem, quando usado pode afetar a pagina*/
+/*por isso e necessario adicionar o clear no elemento antes do float para retirar o efeito da pagina */
+.utensilios {
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.beneficios {
+	padding: 3em 0;
+	background: #888888;
+}
+
+/*para criar um degrade utiliza-se o linear-gradient passando as cores qe seram usadas no elemento*/
+.mapa {
+	padding: 3em 0;
+	background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.mapa-conteudo {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/*espaçamento da fonte line-height */
+.itens {
+	line-height: 1.5;
+}
+
+/*cria uma marcação para o primeiro item de uma classe de elementos */
+.itens:first-child {
+	font-weight: bold;
+}
+
+.itens:before {
+	content: "🟊";
+}
+
+/*para deixar a imagem com o efeito fosco */
+/*box-shadow para adcionar uma sombra na imagem tambem podendo colocar o blur no terceiro px para espalhar a sombra */
+.imagem-beneficios {
+	width: 60%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagem-beneficios:hover {
+	opacity: 0.3;
+}
+
+.video {
+	width: 560px;
+	margin: 2em auto;
+}
+
+/*adaptando o css para os dispositivos mobile com media queries */
+@media screen and (max-width: 480px) {
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.listas-beneficios, .imagem-beneficios {
+		width: 100%;
+	}
+}
